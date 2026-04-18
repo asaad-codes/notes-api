@@ -3,8 +3,8 @@
 
 ## 📌 Overview
 
-This project is a simple RESTful API built using Node.js and Express.
-It allows users to create, read, update, and delete notes.
+This is a RESTful API built using Node.js and Express.js.
+It allows users to perform CRUD operations (Create, Read, Update, Delete) on notes.
 
 ---
 
@@ -22,98 +22,59 @@ It allows users to create, read, update, and delete notes.
 
 * Node.js
 * Express.js
-* Postman (for testing APIs)
+* Postman (for API testing)
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-```
 project/
- ├── routes/
- ├── controllers/
- ├── app.js
- ├── package.json
- └── README.md
-```
+├── src/
+│   ├── controllers/
+│   ├── routes/
+│   └── app.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── server.js
 
 ---
 
 ## ⚙️ Installation & Setup
 
 1. Clone the repository:
-
-```
-git clone https://github.com/yourusername/notes-api.git
-```
+   git clone https://github.com/asaad-codes/notes-api.git
 
 2. Install dependencies:
-
-```
-npm install
-```
+   npm install
 
 3. Run the server:
+   node server.js
 
-```
-node server.js 
-```
-
-Server will run on:
-
-```
-http://localhost:3000
-```
+Server runs on: http://localhost:3000
 
 ---
 
 ## 📡 API Endpoints
 
-### GET all notes
-
-```
 GET /notes
-```
-
-### Create a note
-
-```
 POST /notes
-```
-
-Body:
-
-```
-{
-  "title": "My Note",
-  "description": "This is a note"
-}
-```
-
-### Update a note
-
-```
 PATCH /notes/:id
-```
-
-### Delete a note
-
-```
 DELETE /notes/:id
-```
 
 ---
 
 ## 📊 Testing
 
-You can test all API endpoints using Postman.
+Use Postman to test API endpoints.
 
 ---
 
 ## 🎯 Future Improvements
 
-* Add database (MongoDB)
-* Add authentication
+* Add MongoDB database
+* Add authentication (JWT)
 * Add validation
 * Deploy API online
 
@@ -121,11 +82,11 @@ You can test all API endpoints using Postman.
 
 ## 👨‍💻 Author
 
-Asad Omair
+Asad
 
 ---
 
-## ⭐ Final Note
+## ⭐ Note
 
-This project is part of my backend learning journey.
+This project is part of my backend development learning journey.
 More advanced projects coming soon 🚀
